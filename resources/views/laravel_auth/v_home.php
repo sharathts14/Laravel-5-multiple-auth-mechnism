@@ -15,11 +15,11 @@
         echo 'Laravel Auth'?>
     </title>
     <!--- stylesheets  -->
-    <link href="http://localhost/laravel_auth/resources/assets/laravel_auth/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="http://localhost/laravel_auth/resources/assets/laravel_auth/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/css/bootstrap-theme.min.css" rel="stylesheet" />
 
-    <script src="http://localhost/laravel_auth/resources/assets/laravel_auth/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="http://localhost/laravel_auth/resources/assets/laravel_auth/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script src="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/js/bootstrap.min.js" type="text/javascript"></script>
 </head>
 <body>
 <div class="container-fluid" style="background-color: #c0c0c0; padding-left: 35%">

@@ -16,17 +16,17 @@
             echo 'Laravel Auth'?>
         </title>
         <!--- stylesheets  -->
-        <link href="http://localhost/laravel_auth/resources/assets/laravel_auth/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="http://localhost/laravel_auth/resources/assets/laravel_auth/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/css/bootstrap-theme.min.css" rel="stylesheet" />
 
-        <script src="http://localhost/laravel_auth/resources/assets/laravel_auth/js/jquery-1.9.1.min.js" type="text/javascript"></script>
-        <script src="http://localhost/laravel_auth/resources/assets/laravel_auth/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/js/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script src="http://localhost:8080/laravel_auth/resources/assets/laravel_auth/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <div class="container-fluid" style="background-color: #c0c0c0; padding-left: 35%">
+        <div class="container-fluid" style="background-color: #c0c0c0; padding-left: 35%; padding-top: 5%; padding-bottom: 5%">
             <div class="row">
                 <div class="well col-lg-6 col-sm-4">
-                    <form id="login_form" name="login" class="form-horizontal" method="POST" action="Validate/login_auth">
+                    <form id="login_form" name="login" class="form-horizontal" method="POST" action="Validate/login_auth_ldap">
 
                         <div class="box-header well"  style="text-align: center">
                             <span>Please Enter Username and Password</span>
@@ -62,7 +62,7 @@
                         </div>
                         <br/>
                         <div style="padding-left: 25%">
-                            <a class="btn btn-md btn-primary" style="width: 200px" name="login-facebook" type="submit" value="Sign-in With Facebook">Sign-in With Facebook</a>
+                            <a href="auth/facebook" class="btn btn-md btn-primary" style="width: 200px" name="login-facebook" type="submit" value="Sign-in With Facebook">Sign-in With Facebook</a>
                         </div>
                     </form>
                 </div>

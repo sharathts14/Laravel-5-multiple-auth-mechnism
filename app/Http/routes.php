@@ -14,5 +14,7 @@
 Route::get('/', 'Login@view');
 Route::get('Login', 'Login@view');
 
-Route::get('auth/google', 'Login@redirectToProvider');
-Route::get('auth/google/callback', 'Login@handleProviderCallback');
+Route::get('auth/{auth_provider}', 'Login@redirectToProvider@$auth_provider');
+Route::get('auth/callback/{auth_provider}', 'Login@handleProviderCallback@$auth_provider');
+
+Route::get('Home', 'Home@view');

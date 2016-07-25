@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 use Socialite;
 use Illuminate\Support\Facades\View;
+use Illuminate\Http\Request;
 
 class Login extends Controller
 {
@@ -26,9 +27,10 @@ class Login extends Controller
      *
      * @return Response
      */
-    public function redirectToProvider()
+    public function redirectToProvider($auth_provider)
     {
-        return Socialite::driver('google')->redirect();
+        //echo $auth_provider;
+        return Socialite::driver($auth_provider)->redirect();
     }
 
     /**
@@ -36,13 +38,20 @@ class Login extends Controller
      *
      * @return Response
      */
-    public function handleProviderCallback()
+    public function handleProviderCallback( $auth_provider)
     {
-        $user = Socialite::driver('google')->user();
-        //$user = "sharath";
+        $user = Socialite::driver($auth_provider)->user();
+
+        /*******************Validate or create users here with help of Database********************
+
+        { code }
+
+
+        ****************/
+
         return View::make('laravel_auth/v_home',
             [
-                'username' => $user,
+                'username' => $user->getName(),
             ]);
 
         // $user->token;
